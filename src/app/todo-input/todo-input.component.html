@@ -1,0 +1,3 @@
+<input type="text" #todo placeholder="What to do ?" (keyup.enter)="addTodo(todo.value)"> {{ todo.value }} 
+
+<button (click)="addTodo(todo.value); todo.value=''" > Add Todo </button>
